@@ -41,9 +41,35 @@ do
             }
 
             break;
+        
         case 2:
+            double calificacion1;
+            double calificacion2;
+            double calificacion3;
+            
+            Console.Write("Ingrese nota 1: ");
+            double.TryParse(Console.ReadLine(), out calificacion1);
+
+            Console.Write("Ingrese nota 2: ");
+            double.TryParse(Console.ReadLine(), out calificacion2);
+            
+            Console.Write("Ingrese nota 3: ");
+            double.TryParse(Console.ReadLine(), out calificacion3);
+            
+            var promedio = (calificacion1 + calificacion2 + calificacion3) / 3;
+
+            if (promedio >= 3.0)
+            {
+                Console.WriteLine($"El promedio es: {promedio} \nEstado: Aprobado");
+            }
+            else
+            {
+                Console.WriteLine($"El promedio es: {promedio} \nEstado: Reprobado");
+            }
+            
             break;
         case 3:
+            
             break;
         case 4:
             break;
