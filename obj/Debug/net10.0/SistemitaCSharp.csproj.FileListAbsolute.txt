@@ -12,3 +12,4 @@ C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\refint\Sist
 C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.pdb
 C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.genruntimeconfig.cache
 C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\ref\SistemitaCSharp.dll
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.sourcelink.json
