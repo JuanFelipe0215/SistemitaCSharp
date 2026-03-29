@@ -22,15 +22,13 @@ do
     switch (option)
     {
         case 1:
-            string valor1;
-            string valor2;
             int num1;
             int num2;
 
             Console.Write("Ingrese primer numero: ");
-            valor1 = Console.ReadLine();
+            string valor1 = Console.ReadLine();
             Console.Write("Ingrese segundo numero: ");
-            valor2 = Console.ReadLine();
+            string valor2 = Console.ReadLine();
 
             if (int.TryParse(valor1, out num1) && int.TryParse(valor2, out num2))
             {
@@ -39,7 +37,7 @@ do
             }
             else
             {
-                Console.WriteLine("Valores incorrecto");
+                Console.WriteLine("Valores incorrectos");
             }
 
             break;
