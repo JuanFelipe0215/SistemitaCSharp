@@ -83,7 +83,15 @@ do
             }
             
             break;
+        
         case 3:
+            Console.Write("Ingrese su nombre: ");
+            var name = Console.ReadLine();
+            
+            Console.Write("Ingrese su apellido: ");
+            var lastname = Console.ReadLine();
+            
+            Console.WriteLine($"Hi! {name} {lastname}, how are you?");
             
             break;
         case 4:
