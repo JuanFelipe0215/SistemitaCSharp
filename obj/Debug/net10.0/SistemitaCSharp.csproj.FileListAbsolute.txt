@@ -1,0 +1,14 @@
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\bin\Debug\net10.0\SistemitaCSharp.exe
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\bin\Debug\net10.0\SistemitaCSharp.deps.json
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\bin\Debug\net10.0\SistemitaCSharp.runtimeconfig.json
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\bin\Debug\net10.0\SistemitaCSharp.dll
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\bin\Debug\net10.0\SistemitaCSharp.pdb
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.AssemblyInfoInputs.cache
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.AssemblyInfo.cs
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.csproj.CoreCompileInputs.cache
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.dll
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\refint\SistemitaCSharp.dll
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.pdb
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\SistemitaCSharp.genruntimeconfig.cache
+C:\Users\minej\OneDrive\Documentos\SistemitaCSharp\obj\Debug\net10.0\ref\SistemitaCSharp.dll
