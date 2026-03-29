@@ -43,20 +43,35 @@ do
             break;
         
         case 2:
-            double calificacion1;
-            double calificacion2;
-            double calificacion3;
+            double nota1;
+            double nota2;
+            double nota3;
+            string calificacion1;
+            string calificacion2;
+            string calificacion3;
             
-            Console.Write("Ingrese nota 1: ");
-            double.TryParse(Console.ReadLine(), out calificacion1);
-
-            Console.Write("Ingrese nota 2: ");
-            double.TryParse(Console.ReadLine(), out calificacion2);
+            do
+            {
+                Console.Write("Ingrese nota 1: ");
+                calificacion1 = Console.ReadLine();
+                
+            } while (!double.TryParse(calificacion1 , out nota1));
             
-            Console.Write("Ingrese nota 3: ");
-            double.TryParse(Console.ReadLine(), out calificacion3);
+            do
+            {
+                Console.Write("Ingrese nota 2: ");
+                calificacion2 = Console.ReadLine();
+                
+            } while (!double.TryParse(calificacion2 , out nota2));
             
-            var promedio = (calificacion1 + calificacion2 + calificacion3) / 3;
+            do
+            {
+                Console.Write("Ingrese nota 3: ");
+                calificacion3 = Console.ReadLine();
+                
+            } while (!double.TryParse(calificacion3 , out nota3));
+            
+            var promedio = (nota1 + nota2 + nota3) / 3;
 
             if (promedio >= 3.0)
             {
