@@ -12,8 +12,7 @@ do
     6. Nivel 6: Gestión de Tareas (Listas de cadenas)
     7. Nivel 7: Arreglos y Búsqueda
     8. Nivel 8: Programación Orientada a Objetos (Clases)
-    9. Nivel 9: CRUD de Objetos (Listas de objetos)
-    10. Salir 
+    9. Salir.
     ");
 
     Console.Write("Seleccione un nivel para iniciar: ");
@@ -203,7 +202,58 @@ do
             break;
         
         case 6:
+            List<string> pendingTasks = new List<string>();
+            int optionTask;
+            
+            do
+            {
+                Console.WriteLine(@"
+                Menú:
+                1. Agregar tarea.
+                2. Ver tareas con indices.
+                3. Eliminar tarea por indice.
+                4. Salir.
+                ");
+            
+                Console.Write("Ingrese una opcion: ");
+                int.TryParse(Console.ReadLine(), out optionTask);
+
+                switch (optionTask)
+                {
+                    case 1:
+                        Console.Write("Ingrese tarea pendiente: ");
+                        var task = Console.ReadLine();
+                        
+                        pendingTasks.Add(task);
+                        Console.WriteLine("Tarea agregada con exito!");
+                        break;
+                    case 2:
+                        foreach (var tasks in pendingTasks)
+                        {
+                            var index = pendingTasks.IndexOf(tasks);
+                            Console.WriteLine($"Tarea: {tasks} - Indice: {index}");
+                            
+                        }
+                        break;
+                    case 3:
+                        Console.Write("Ingrese indice de tarea a eliminar: ");
+                        int.TryParse(Console.ReadLine(), out int taskRemove);
+                        
+                        pendingTasks.RemoveAt(taskRemove);
+                        Console.WriteLine("Tarea Eliminada con Exito!");
+                        break;
+                    case 4:
+                        Console.WriteLine("Sistema Task: Hasta luego!");
+                        break;
+                    default:
+                        Console.WriteLine("Ingrese un valor valido");
+                        break;
+                }
+            } while (optionTask != 4);
+            
+            
             break;
+        
         case 7:
             break;
         case 8:
