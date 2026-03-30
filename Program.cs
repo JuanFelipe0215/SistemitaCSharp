@@ -169,9 +169,39 @@ do
             break;
         
         case 5:
+            List<int> numbers = new List<int>();
+            var sum = 0;
             
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Ingrese el numero {i + 1}: ");
+                numbers.Add(int.Parse(Console.ReadLine()));
+            }
+            
+            var mayor = numbers[0];
+            var menor = numbers[0];
+            
+            foreach (var number in numbers)
+            {
+                sum += number;
+
+                if (mayor < number)
+                {
+                    mayor = number;
+                }
+                
+                if (menor > number)
+                {
+                    menor = number;
+                }
+            }
+            
+            Console.WriteLine($"La suma total es: {sum}");
+            Console.WriteLine($"El numero mayor es: {mayor}");
+            Console.WriteLine($"El numero menor es: {menor}");
             
             break;
+        
         case 6:
             break;
         case 7:
@@ -179,10 +209,8 @@ do
         case 8:
             break;
         case 9:
-            break;
-        case 10:
             Console.WriteLine("Hasta luego!");
             break;
     }
 
-}while(option != 10);
+}while(option != 9);
