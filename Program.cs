@@ -225,15 +225,22 @@ do
                         var task = Console.ReadLine();
                         
                         pendingTasks.Add(task);
+                        Console.WriteLine("Tarea agregada con exito!");
                         break;
                     case 2:
                         foreach (var tasks in pendingTasks)
                         {
                             var index = pendingTasks.IndexOf(tasks);
                             Console.WriteLine($"Tarea: {tasks} - Indice: {index}");
+                            
                         }
                         break;
                     case 3:
+                        Console.Write("Ingrese indice de tarea a eliminar: ");
+                        int.TryParse(Console.ReadLine(), out int taskRemove);
+                        
+                        pendingTasks.RemoveAt(taskRemove);
+                        Console.WriteLine("Tarea Eliminada con Exito!");
                         break;
                     case 4:
                         Console.WriteLine("Sistema Task: Hasta luego!");
