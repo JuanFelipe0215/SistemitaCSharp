@@ -95,8 +95,82 @@ do
             
             break;
         case 4:
+            int number1;
+            int number2;
+            int result;
+            bool valid;
+            
+            do
+            {
+                Console.Write("Ingrese el primer numero: ");
+                valid = int.TryParse(Console.ReadLine(), out number1);
+
+                if (!valid)
+                {
+                    Console.WriteLine("Ingrese un numero valido");
+                }
+                
+            } while (!valid);
+            
+            do
+            {
+                Console.Write("Ingrese el segundo numero: ");
+                valid = int.TryParse(Console.ReadLine(), out number2);
+
+                if (!valid)
+                {
+                    Console.WriteLine("Ingrese un numero valido");
+                }
+                
+            } while (!valid);
+            
+            Console.Write("Ingrese un operador para realizar la operación(+, -, *, /): ");
+            var operador = Console.ReadLine();
+
+            switch (operador)
+            {
+                case "+":
+                    result = number1 + number2;
+                    Console.WriteLine($"El resultado de la suma {number1} + {number2}  es: {result}");
+                    break;
+                case "-":
+                    result = number1 - number2;
+                    Console.WriteLine($"El resultado de la resta {number1} - {number2}  es: {result}");
+                    break;
+                case "*":
+                    result = number1 * number2;
+                    Console.WriteLine($"El resultado de la multiplicación {number1} * {number2}  es: {result}");
+                    break;
+                case "/":
+
+                    if (number2 == 0)
+                    {
+                        Console.WriteLine("No se puede dividir por cero");
+                        
+                        do
+                        {
+                            Console.Write("Ingrese un numero diferente de cero: ");
+                            valid = int.TryParse(Console.ReadLine(), out number2);
+
+                            if (!valid)
+                            {
+                                Console.WriteLine("Ingrese un numero valido");
+                            }
+                
+                        } while (!valid || number2 == 0);
+                    }
+                    
+                    result = number1 / number2;
+                    
+                    Console.WriteLine($"El resultado de la division {number1} / {number2}  es: {result}");
+                    break;
+            }
+            
             break;
+        
         case 5:
+            
+            
             break;
         case 6:
             break;
