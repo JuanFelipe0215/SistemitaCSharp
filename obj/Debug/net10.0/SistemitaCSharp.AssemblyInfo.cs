@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemitaCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e73c604e6c9f19c4264eae8c5a3f04be23758a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d416e39abcc438e8446690ce07136f0732c95ec7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemitaCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemitaCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
