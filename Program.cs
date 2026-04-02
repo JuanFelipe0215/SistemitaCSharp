@@ -250,11 +250,34 @@ do
                         break;
                 }
             } while (optionTask != 4);
-            
-            
             break;
         
         case 7:
+            string[] cities = { "MEDELLIN", "LONDRES", "NUEVA YORK", "HONG KONG", "CHICAGO" }; 
+            
+            Console.Write("Ingrese una ciudad a buscar: ");
+            var citySearch = Console.ReadLine().ToUpper();
+
+            bool cityFound = false;
+            
+            foreach (var city in cities)
+            {
+                if (city == citySearch)
+                {
+                    cityFound = true;
+                }
+            }
+
+            if (cityFound)
+            {
+                Console.WriteLine("Encontrada");
+            }
+            else
+            {
+                Console.WriteLine("No encontrada");
+            }
+            
+            
             break;
         case 8:
             break;
